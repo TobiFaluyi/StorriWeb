@@ -44,10 +44,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-[#7d7d7d] text-xs flex px-5 lg:px-20 gap-3 lg:gap-5 float-right mb-10 lg:mt-[-20px]">
+      <div className="text-[#7d7d7d] text-xs flex px-5 lg:px-20 gap-3 lg:gap-5 float-right mb-10">
         <p>© 2023 Storri ai</p>
-        <p>Privacy Policy</p>
-        <p>Terms & Conditions</p>
+        <a href="/policy" target="_blank">
+          <p>Privacy Policy</p>
+        </a>
+        <a href="/terms" target="_blank">
+          <p>Terms & Conditions</p>
+        </a>
       </div>
     </>
   );

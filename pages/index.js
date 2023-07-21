@@ -13,22 +13,11 @@ import StorriAI from "@/app/components/StorriAI";
 import Footer from "@/app/components/Footer";
 import EarlyAccessModal from "@/app/components/EarlyAccessModal";
 
-// import About from "./about";
+import { ModalUtils } from "@/app/utils/utils";
 
 export default function Home() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-//   const router = useRouter();
-//   const currentRoute = router.pathname;
+  const { isModalOpen, openModal, closeModal } = ModalUtils();
 
-//   console.log(router);
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
- 
   return (
     <main className="max-w-[1380px] mx-auto">
       <NavBar openModal={openModal} />

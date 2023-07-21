@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 const NavBar = ({ openModal }) => {
   const [showMenu, setshowMenu] = useState(false);
+  const router = useRouter();
+  const currentRoute = router.pathname;
+  console.log(currentRoute);
 
   const toggleMenu = () => {
     let menuBar = document.querySelector(".menuBar");
@@ -19,23 +23,28 @@ const NavBar = ({ openModal }) => {
             alt="Storri"
             width={100}
             height={40}
+            onClick={() => {
+              window.location = "/";
+            }}
           />
         </div>
         <div className="hidden lg:block">
-          <ul className="flex flex-row align-middle gap-10 mt-2">
-            <a href="#highlight">
-              <li>Highlight</li>
-            </a>
-            <a href="#regularusers">
-              <li>For Regular User</li>
-            </a>
-            <a href="#creators">
-              <li>For Creators</li>
-            </a>
-            <a href="#hello">
-              <li>Say Hello</li>
-            </a>
-          </ul>
+          {currentRoute != "/policy" && currentRoute != "/terms" && (
+            <ul className="flex flex-row align-middle gap-10 mt-2">
+              <a href="#highlight">
+                <li>Highlight</li>
+              </a>
+              <a href="#regularusers">
+                <li>For Regular User</li>
+              </a>
+              <a href="#creators">
+                <li>For Creators</li>
+              </a>
+              <a href="#hello">
+                <li>Say Hello</li>
+              </a>
+            </ul>
+          )}
         </div>
         <div className="hidden lg:block">
           <button
@@ -59,25 +68,27 @@ const NavBar = ({ openModal }) => {
             } transition-opacity duration-500 box-shadow-custom`}
           >
             <div>
-              <div className="flex flex-col gap-5 items-center text-black mt-2 mb-4">
-                <a href="#highlight">
-                  <p>Highlight</p>
-                </a>
-                <a href="#regularusers">
-                  <p>For Regular User</p>
-                </a>
-                <a href="#creators">
-                  <p>For Creators</p>
-                </a>
-                <a href="#hello">
-                  <p>Say Hello</p>
-                </a>
-              </div>
+              {currentRoute != "/policy" && currentRoute != "/terms" && (
+                <div className="flex flex-col gap-5 items-center text-black mt-2">
+                  <a href="#highlight">
+                    <p>Highlight</p>
+                  </a>
+                  <a href="#regularusers">
+                    <p>For Regular User</p>
+                  </a>
+                  <a href="#creators">
+                    <p>For Creators</p>
+                  </a>
+                  <a href="#hello">
+                    <p>Say Hello</p>
+                  </a>
+                </div>
+              )}
             </div>
             <div className="">
               <button
                 onClick={() => openModal()}
-                className="rounded-xl bg-black text-white py-3 px-5 mb-5"
+                className="rounded-xl bg-black text-white py-3 px-5 mt-5 mb-5"
               >
                 Join Early Access
               </button>

@@ -6,19 +6,14 @@ import NavBar from "@/app/components/NavBar";
 import Footer from "@/app/components/Footer";
 import EarlyAccessModal from "@/app/components/EarlyAccessModal";
 
+import { ModalUtils } from "@/app/utils/utils";
+
 export default function Policy() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { isModalOpen, openModal, closeModal } = ModalUtils();
 
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
   return (
     <>
-      <main className="max-w-[1380px] mx-auto">
+      <main className="max-w-[1440px] mx-auto">
         <NavBar openModal={openModal} />
         <div className="px-5 lg:px-20 pt-10">
           <div className="flex justify-center lg:justify-between">
@@ -36,7 +31,7 @@ export default function Policy() {
             />
           </div>
         </div>
-        <div className="bg-white mt-10 px-5 lg:px-20">
+        <div className="bg-white mt-5 pt-5 px-5 lg:px-20 box-shadow-custom">
           <p>
             Storri AI (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;)
             operates http://www.Storri.ai This page informs you of our policies
@@ -230,6 +225,203 @@ export default function Policy() {
             with all such requirements it is the policy of the firm to retain
             all data for a period of [seven] years from the end of the period
             concerned.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">
+            Who has access to your information?
+          </p>
+          <p className="mt-2">
+            We will not sell or rent your information to third parties.
+            <br />
+            We will not share your information with third parties for marketing
+            purposes.
+            <br />
+            Any staff with access to your information has a duty of
+            confidentiality under the ethical standards that this firm is
+            required to follow.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">Do we use &quot;cookies&quot;?</p>
+          <p className="mt-2">
+            Yes. Cookies are small files that a site or its service provider
+            transfers to your computer&quot;s hard drive through your Web browser (if
+            you allow) that enables the site&quot;s or service provider&quot;s systems to
+            recognize your browser and capture and remember certain information.
+            For instance, we use cookies to help us remember and process your
+            area of interest (amidst our various categories of contents, be it
+            Sports, Entertainment, Politics, Business, Health, and Technology)
+            based on your interactions on our platform.
+            <br />
+            <br />
+            We also use cookies to help us compile aggregate data about site
+            traffic and site interaction so that we can offer better site
+            experiences in the future.
+            <br />
+            <br />
+            You can choose to have your computer warn you each time a cookie is
+            being sent, or you can choose to turn off all cookies. You do this
+            through your browser settings.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">
+            Third-Party Service Providers
+          </p>
+          <p className="mt-2">
+            We may pass your information to our third-party service providers,
+            agents, subcontractors, and other associated organizations for the
+            purposes of completing tasks and providing services to you on our
+            behalf. However, when we use third-party service providers, we
+            disclose only the personal information that is necessary to deliver
+            the service and we have a contract in place that requires them to
+            keep your information secure and not to use it for their own
+            purposes.
+            <br />
+            <br />
+            Please be assured that we will not release your information to third
+            parties unless you have requested that we do so, or we are required
+            to do so by law, for example, by a court order or for the purposes
+            of prevention and detection of crime, fraud or corruption.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">
+            How you can access and update your information
+          </p>
+          <p className="mt-2">
+            Keeping your information up to date and accurate is important to us.
+            We commit to regularly review and correct where necessary, the
+            information that we hold about you. If any of your information
+            changes, please email or write to us, or call us using the
+            &quot;Contact information&quot; noted below.
+            <br />
+            <br />
+            You have the right to ask for a copy of the information Storri AI
+            holds about you.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3 max-w-[720px]">
+            Security Precautions in place to protect the loss, misuse, or
+            alteration of your information
+          </p>
+          <p className="mt-2">
+            Whilst we strive to protect your personal information, we cannot
+            guarantee the security of any information you transmit to us, and
+            you do so at your own risk.
+            <br />
+            <br />
+            Once we receive your information, we make our best effort to ensure
+            its security on our systems. Where we have given, or where you have
+            chosen, a password that enables you to access information, you are
+            responsible for keeping this password confidential. We ask you not
+            to share your password with anyone.
+            <br />
+            <br />
+            Your data will usually be processed in our offices in the UK.
+            However, to allow us to operate efficient digital processes, we
+            sometimes need to store information in servers located outside the
+            UK. We take the security of your data seriously and so all our
+            systems have appropriate security in place that complies with all
+            applicable legislative and regulatory requirements.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">Your choices</p>
+          <p className="mt-2">
+            We may occasionally contact you by [post/email/telephone] with
+            details of any changes in legal and regulatory requirements or other
+            developments that may be relevant to your affairs and, where
+            applicable, how we may assist you further. If you do not wish to
+            receive such information from us, please let us know by contacting
+            us as indicated under &quot;Contact information&quot; below.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">Your rights</p>
+          <p className="mt-2">
+            <b>Access to your information:</b> You have the right to request a
+            copy of the personal information about you that we hold.
+            <br />
+            <br />
+            <b>Correcting your information:</b> We want to make sure that your
+            personal information is accurate, complete, and up to date and you
+            may ask us to correct any personal information about you that you
+            believe does not meet these standards.
+            <br />
+            <br />
+            <b>Deletion of your information:</b> You have the right to ask us to
+            delete personal information about you where:
+          </p>
+          <ul className="list-disc pl-5">
+            <li>
+              you consider that we no longer require the information for the
+              purposes for which it was obtained
+            </li>
+            <li>
+              you have validly objected to our use of your personal information
+              - see &quot;Objecting to how we may use your information&quot;
+              below
+            </li>
+            <li>
+              our use of your personal information is contrary to law or our
+              other legal obligations
+            </li>
+            <li>
+              [we are using your information with your consent and you have
+              withdrawn your consent - see &quot;withdrawing consent to use your
+              information&quot; below].
+            </li>
+          </ul>
+          <br />
+          <p>
+            <b>Restricting how we may use your information:</b> In some cases,
+            you may ask us to restrict how we use your personal information.
+            This right might apply, for example, where we are checking the
+            accuracy of personal information about you that we hold or assessing
+            the validity of any objection you have made to our use of your
+            information. The right might also apply where there is no longer a
+            basis for using your personal information but you do not want us to
+            delete the data. Where this right is validly exercised, we may only
+            use the relevant personal information with your consent, for legal
+            claims or where there are other public interest grounds to do so.
+            <br />
+            <br />
+            <b>Objecting to how we may use your information:</b> Where we use
+            your personal information to perform tasks carried out in the public
+            interest then if you ask us to, we will stop using that personal
+            information unless there are overriding legitimate grounds to
+            continue. You have the right at any time to require us to stop using
+            your personal information for direct marketing purposes.
+            <br />
+            <br />
+            <b>Withdrawing consent to use your information:</b> Where we use
+            your personal information with your consent you may withdraw that
+            consent at any time and we will stop using your personal information
+            for the purpose(s) for which consent was given. Please contact us in
+            any of the ways set out in &quot;Contact information&quot; below if
+            you wish to exercise any of these rights.
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">
+            Changes to our privacy notice
+          </p>
+          <p>
+            We keep this privacy notice under regular review and will place any
+            updates on{" "}
+            <a href="https://www.Storri.ai/updates" target="_blank">
+              www.Storri.ai/updates.
+            </a>{" "}
+            Paper copies of the privacy notice may also be obtained from{" "}
+            <a href="https://www.Storri.ai/downloads" target="_blank">
+              www.Storri.ai/downloads.
+            </a>
+            <br />
+            <br />
+            This privacy notice was implemented on 20/06/2023
+          </p>
+          <p className="text-2xl font-bold mt-8 mb-3">Complaints</p>
+          <p className="mb-10">
+            We seek to resolve directly all complaints about how we handle your
+            personal information but you also have the right to lodge a
+            complaint with the Information
+            <br />
+            <br />
+            Website:{" "}
+            <a
+              className="font-bold"
+              href="https://www.Storri.ai"
+              target="_blank"
+            >
+              https://www.Storri.ai
+            </a>
           </p>
         </div>
         <Footer />
