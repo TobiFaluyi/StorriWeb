@@ -3,7 +3,7 @@ import React from "react";
 
 const Hero = ({ openModal }) => {
   return (
-    <div className="bg-white mt-3 text-black px-7 lg:px-20 pt-10 flex flex-col lg:grid lg:grid-cols-3 gap-4">
+    <div className="bg-white mt-20 md:mt-16 lg:mt-28 text-black px-7 lg:px-20 pt-10 flex flex-col lg:grid lg:grid-cols-3 gap-4">
       <div className="flex flex-col items-center lg:items-start lg:col-span-1 lg:mx-0 mt-5 mb-10 lg:mt-32">
         <p className="text-5xl font-bold leading-[60px] max-w-[350px] mx-auto text-center lg:text-left lg:mx-0">
           Inspire, Engage <br />& Create

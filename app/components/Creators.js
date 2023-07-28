@@ -3,13 +3,16 @@ import React from "react";
 
 const Creators = () => {
   return (
-    <div className="bg-black lg:px-20 pt-28 pb-20">
-      <div id="creators" className="text-gray-400 px-5 lg:px-0 text-5xl lg:text-8xl font-bold max-w-[400px]">
-        For Creators
+    <div className="creator-bg lg:px-20 pt-28 pb-20">
+      <div
+        id="creators"
+        className="creator-header mx-auto text-center px-5 lg:px-0 text-4xl lg:text-7xl font-bold max-w-[700px] mb-5"
+      >
+        Coming Soon Creators Feature
       </div>
       <div className="flex flex-col lg:flex-row gap-5 justify-center mt-16 mx-5 md:mx-40 lg:mx-0">
         <div className="relative w-full h-[500px] lg:h-[820px] lg:w-[550px]">
-          <Image src={"/assets/images/userstorri.png"} alt="Storri" fill />
+          <Image src={"/assets/images/creators.png"} alt="Storri" fill />
         </div>
         <div className="flex flex-col">
           <div className="flex flex-row">

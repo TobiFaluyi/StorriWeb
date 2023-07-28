@@ -9,7 +9,7 @@ const EarlyAccessModal = ({ isModalOpen, closeModal }) => {
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-75 bg-gray-900 text-black">
           <div className="bg-white rounded-lg shadow-lg p-7">
-            <div className="flex justify-between mb-10">
+            <div className="flex justify-between my-10">
               <div className="">
                 <Image
                   src={"/assets/images/logostorri.png"}
@@ -68,21 +68,21 @@ const EarlyAccessModal = ({ isModalOpen, closeModal }) => {
       )}
       {earlySuccess && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-75 bg-gray-900 text-black">
-          <div className="bg-white rounded-lg shadow-lg p-7">
+          <div className="bg-white rounded-lg shadow-lg pt-10 px-5 pb-12">
             <button
               className="float-right"
               onClick={() => setearlySuccess(!earlySuccess)}
             >
               &#10006;
             </button>
-            <div className="flex flex-col items-center gap-5">
+            <div className="flex flex-col items-center ml-1">
               <Image
                 alt="success"
-                src={"/assets/images/success.svg"}
-                height={100}
-                width={100}
+                src={"/assets/images/success_animate.gif"}
+                height={200}
+                width={200}
               />
-              <p className="font-bold text-3xl max-w-[400px] text-center">
+              <p className="font-bold text-3xl max-w-[400px] text-center mb-6">
                 Early Access
                 <br />
                 Joined Successfully

@@ -4,7 +4,7 @@ import React from "react";
 const RegularUsers = () => {
   return (
     <div className="bg-white lg:px-20 pt-40">
-      <div id="regularusers" className="text-gray-400 px-5 lg:px-0 text-5xl lg:text-8xl font-bold max-w-[700px]">
+      <div id="regularusers" className="section-header px-5 lg:px-0 text-5xl lg:text-8xl font-bold max-w-[700px]">
         For Regular Users
       </div>
       <div className="flex flex-col lg:flex-row gap-5 justify-center mt-16 mx-5 md:mx-40 lg:mx-0">

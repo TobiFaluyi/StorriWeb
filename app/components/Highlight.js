@@ -5,8 +5,8 @@ const Highlight = () => {
   return (
     <div className="bg-white lg:px-20 pt-40">
       <div id="highlight" className="text-gray-400 px-5 lg:px-0 text-5xl lg:text-8xl font-bold">Highlight</div>
-      <div className="flex flex-col lg:flex-row text-black">
-        <div className="flex flex-col bg-[#f6f6f6] my-10 px-5 py-10 mx-4 rounded-2xl">
+      <div className="flex flex-col lg:flex-row text-black mt-10">
+        <div className="flex flex-col bg-[#f6f6f6] px-5 py-10 mx-4 rounded-2xl">
           <div className="relative w-[260px] h-[280px] mx-auto">
             <Image src={"/assets/images/Uncover.png"} alt="Storri" fill />
           </div>
@@ -16,7 +16,7 @@ const Highlight = () => {
             and stay up-to-date with the latest stories that matter to you.
           </p>
         </div>
-        <div className="flex flex-col bg-[#f6f6f6] my-10 px-5 py-10 mx-4 rounded-2xl">
+        <div className="flex flex-col bg-[#f6f6f6] px-5 py-10 mx-4 rounded-2xl mt-7 lg:mt-0">
           <div className="relative w-[260px] h-[280px] mx-auto">
             <Image src={"/assets/images/Captivate.png"} alt="Storri" fill />
           </div>
@@ -29,7 +29,7 @@ const Highlight = () => {
             platforms.
           </p>
         </div>
-        <div className="flex flex-col bg-[#f6f6f6] my-10 px-5 py-10 mx-4 rounded-2xl">
+        <div className="flex flex-col bg-[#f6f6f6] px-5 py-10 mx-4 rounded-2xl mt-7 lg:mt-0">
           <div className="relative w-[260px] h-[280px] mx-auto">
             <Image src={"/assets/images/Discover.png"} alt="Storri" fill />
           </div>

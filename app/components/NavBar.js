@@ -15,8 +15,8 @@ const NavBar = ({ openModal }) => {
     setshowMenu(!showMenu);
   };
   return (
-    <>
-      <nav className="flex justify-between align-middle bg-white text-black mx-5 lg:mx-10 mt-4 p-5 rounded-xl box-shadow-custom">
+    <div className="stickyNav">
+      <nav className="flex justify-between align-middle bg-white text-black mt-4 p-5 rounded-xl box-shadow-custom">
         <div>
           <Image
             src={"/assets/images/logostorri.png"}
@@ -63,7 +63,7 @@ const NavBar = ({ openModal }) => {
       {showMenu && (
         <>
           <div
-            className={`flex flex-col items-center bg-white mx-10 mt-5 rounded-xl lg:hidden ${
+            className={`flex flex-col items-center bg-white lg:mx-28 mt-5 rounded-xl lg:hidden ${
               showMenu ? "opacity-100" : "opacity-0"
             } transition-opacity duration-500 box-shadow-custom`}
           >
@@ -96,7 +96,7 @@ const NavBar = ({ openModal }) => {
           </div>
         </>
       )}
-    </>
+    </div>
   );
 };
 

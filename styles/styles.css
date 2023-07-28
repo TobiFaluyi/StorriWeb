@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 /* Set the font-family for all text */
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -54,4 +58,24 @@
 
 .checkbox-container input:checked~.checkmark {
     background-color: #000;
+}
+
+.stickyNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1380px;
+    z-index: 1000;
+}
+
+.section-header {
+    color:rgba(13, 13, 13, 0.2)
+}
+
+.creator-header {
+    color: white
+}
+
+.creator-bg {
+    background-color: rgba(13, 13, 13, 100%);
 }
