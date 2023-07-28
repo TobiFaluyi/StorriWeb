@@ -4,7 +4,7 @@ import React from "react";
 const Highlight = () => {
   return (
     <div className="bg-white lg:px-20 pt-40">
-      <div id="highlight" className="text-gray-400 px-5 lg:px-0 text-5xl lg:text-8xl font-bold">Highlight</div>
+      <div id="highlight" className="section-header px-5 lg:px-0 text-5xl lg:text-8xl font-bold">Highlight</div>
       <div className="flex flex-col lg:flex-row text-black mt-10">
         <div className="flex flex-col bg-[#f6f6f6] px-5 py-10 mx-4 rounded-2xl">
           <div className="relative w-[260px] h-[280px] mx-auto">
