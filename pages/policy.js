@@ -15,7 +15,7 @@ export default function Policy() {
     <>
       <main className="max-w-[1440px] mx-auto">
         <NavBar openModal={openModal} />
-        <div className="px-5 lg:px-20 pt-10">
+        <div className="px-5 lg:px-20 pt-10 mt-20">
           <div className="flex justify-center lg:justify-between">
             <p className="text-4xl lg:text-7xl font-bold">
               Privacy
