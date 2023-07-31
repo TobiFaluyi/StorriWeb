@@ -8,7 +8,7 @@ const EarlyAccessModal = ({ isModalOpen, closeModal }) => {
     <>
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-opacity-75 bg-gray-900 text-black">
-          <div className="bg-white rounded-lg shadow-lg p-7">
+          <div className="bg-white rounded-lg shadow-lg pb-7 px-7">
             <div className="flex justify-between my-10">
               <div className="">
                 <Image

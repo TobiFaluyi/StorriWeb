@@ -7,7 +7,6 @@ const NavBar = ({ openModal }) => {
   const [showMenu, setshowMenu] = useState(false);
   const router = useRouter();
   const currentRoute = router.pathname;
-  console.log(currentRoute);
 
   const toggleMenu = () => {
     let menuBar = document.querySelector(".menuBar");

@@ -13,9 +13,9 @@ export default function Terms() {
 
   return (
     <>
-      <main className="max-w-[1440px] mx-auto">
+      <main className="max-w-[1380px] mx-auto">
         <NavBar openModal={openModal} />
-        <div className="px-5 lg:px-20 pt-10 mt-20">
+        <div className="bg-[#f6f6f6] px-5 lg:px-20 pt-10 mt-20">
           <div className="flex justify-center lg:justify-between">
             <p className="text-4xl lg:text-7xl font-bold text-center md:text-left">
               Terms
@@ -30,7 +30,7 @@ export default function Terms() {
             />
           </div>
         </div>
-        <div className="bg-white mt-5 pt-5 px-5 lg:px-20 box-shadow-custom">
+        <div className="bg-white mt-5 pt-5 px-5 lg:px-20">
           <p>
             First a big thank you for choosing Storri AI. You are reading the
             terms of service (the “Terms”), which govern the relationship and

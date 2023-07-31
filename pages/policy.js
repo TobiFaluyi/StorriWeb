@@ -13,7 +13,7 @@ export default function Policy() {
 
   return (
     <>
-      <main className="max-w-[1440px] mx-auto">
+      <main className="bg-[#f6f6f6] max-w-[1380px] mx-auto">
         <NavBar openModal={openModal} />
         <div className="px-5 lg:px-20 pt-10 mt-20">
           <div className="flex justify-center lg:justify-between">
@@ -31,7 +31,7 @@ export default function Policy() {
             />
           </div>
         </div>
-        <div className="bg-white mt-5 pt-5 px-5 lg:px-20 box-shadow-custom">
+        <div className="bg-white mt-5 pt-5 px-5 lg:px-20">
           <p>
             Storri AI (&quot;us&quot;, &quot;we&quot;, or &quot;our&quot;)
             operates http://www.Storri.ai This page informs you of our policies
@@ -408,7 +408,7 @@ export default function Policy() {
             This privacy notice was implemented on 20/06/2023
           </p>
           <p className="text-2xl font-bold mt-8 mb-3">Complaints</p>
-          <p className="mb-10">
+          <p className="">
             We seek to resolve directly all complaints about how we handle your
             personal information but you also have the right to lodge a
             complaint with the Information
