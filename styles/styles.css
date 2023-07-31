@@ -69,7 +69,7 @@ html {
 }
 
 .section-header {
-    color:rgba(13, 13, 13, 0.2)
+    color: rgba(13, 13, 13, 0.2)
 }
 
 .creator-header {
@@ -78,4 +78,35 @@ html {
 
 .creator-bg {
     background-color: rgba(13, 13, 13, 100%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+/* .grid-item {
+   
+  } */
+
+.grid-item:last-child {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-item:last-child {
+        grid-column: initial;
+    }
 }

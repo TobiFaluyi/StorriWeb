@@ -12,6 +12,7 @@ import Creators from "@/app/components/Creators";
 import StorriAI from "@/app/components/StorriAI";
 import Footer from "@/app/components/Footer";
 import EarlyAccessModal from "@/app/components/EarlyAccessModal";
+import Publication from "@/app/components/Publication";
 
 import { ModalUtils } from "@/app/utils/utils";
 
@@ -25,6 +26,7 @@ export default function Home() {
       <Highlight />
       <RegularUsers />
       <Discover />
+      <Publication />
       <Creators />
       <StorriAI openModal={openModal} />
       <Footer />
